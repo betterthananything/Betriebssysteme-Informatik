@@ -11,5 +11,5 @@ Man unterscheidet zwischen zwei Arten von Semaphoren:
 Das erhöhen und verringern des Zählerwerts muss durch atomare Operationen geschehen, also können die Operationen nur von einem Prozess auf einmal aufgerufen und durchlaufen wrden, ansonsten könnte es zu Inkonsistenzen beim Lesen und Schreiben kommen. Dazu ist eine Unterstützung durch den Prozesser zwingend erforderlich, da nur dieser echte atomare Operationen implementieren kann, welche anschließend über das Betriebssystem bereitgestellt werden.
 Es kann sowohl passives als auch aktives Warten eingesetzt werden
 
-Quelle: Schulbuch S. 210-212; S. 213 "roter Kasten"
+Quelle: Schulbuch S. 210-212; S. 213 "roter Kasten"; https://de.wikipedia.org/wiki/Semaphor_(Informatik)
 
