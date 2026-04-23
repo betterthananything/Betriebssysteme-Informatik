@@ -59,3 +59,12 @@ In der Round Robin Scheduling Strategie rotiert das System (OS) durch jeden anst
     - P3 fährt fort und läuft für 2 ms und beedet seine Ausführung
     - Restliche BT = 2 - 2 = 0 ms
     - Ready Queue: 
+
+#### Vorteile: 
+- Jeder Prozess kriegt die gleiche Menge an CPU
+- Der Algorithmus ist einfach zu implementieren und verstehen
+- Kann mehrere Prozesse gleichzeitig bewältigen ohne große Verzögerungen
+
+#### Nachteile:
+- Großer Overhead wenn der Quantum (Quantum Time) zu klein ist
+- Fühlt sich langsam an wenn der Quantum zu groß ist
