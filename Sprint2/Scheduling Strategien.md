@@ -28,34 +28,34 @@ In der Round Robin Scheduling Strategie rotiert das System (OS) durch jeden anst
 
 **Step-by-Step:**
 1. Time 0-2 (P1 führt aus):
-  - P1 fängt Ausführung an als es bei 0 ms ankommt
-  - Läuft für 2 ms; restliche BT = 5 - 2 = 3 ms
-  - Ready Queue: P1
+    - P1 fängt Ausführung an als es bei 0 ms ankommt
+    -  Läuft für 2 ms; restliche BT = 5 - 2 = 3 ms
+    - Ready Queue: P1
 
 2. Time 2-4 (P1 führt nochmal aus):
-  - P1 führt weiter aus, da noch kein anderer Prozess angekommen ist
-  - Läuft für 2 ms; restliche BT = 3 - 2 = 1 ms
-  - P2 kommt bei 4 ms an
-  - Ready Queue: P2, P1
+    - P1 führt weiter aus, da noch kein anderer Prozess angekommen ist
+    - Läuft für 2 ms; restliche BT = 3 - 2 = 1 ms
+    - P2 kommt bei 4 ms an
+    - Ready Queue: P2, P1
 
 3. Time 4-6 (P2 führt aus):
-  - P2 fängt Ausführung an als es bei 4 ms ankommt
-  - Läuft für 2 ms; restliche BT = 2 - 2 = 0 ms
-  - P2 ist fertig
-  - P3 kommt bei 5 ms an
-  - Ready Queue: P1, P3
+    - P2 fängt Ausführung an als es bei 4 ms ankommt
+    - Läuft für 2 ms; restliche BT = 2 - 2 = 0 ms
+    - P2 ist fertig
+    - P3 kommt bei 5 ms an
+    - Ready Queue: P1, P3
 
 4. Time 6-7 (P1 führt aus):
-  - P1 fängt Ausführung an
-  - Läuft für 1 ms; restliche BT = 1 - 1 = 0 ms
-  - Ready Queue: P3
+    - P1 fängt Ausführung an
+    - Läuft für 1 ms; restliche BT = 1 - 1 = 0 ms
+    - Ready Queue: P3
 
 5. Time 7-9 (P3 führt aus):
-  - P3 fängt ausführung an
-  - Restliche BT = 4 - 2 = 2 ms
-  - Ready Queue: P3
-
+    - P3 fängt ausführung an
+    - Restliche BT = 4 - 2 = 2 ms
+    - Ready Queue: P3
+  
 6. Time 9-11 (P3 führt nochmal aus):
-  - P3 fährt fort und läuft für 2 ms und beedet seine Ausführung
-  - Restliche BT = 2 - 2 = 0 ms
-  - Ready Queue: 
+    - P3 fährt fort und läuft für 2 ms und beedet seine Ausführung
+    - Restliche BT = 2 - 2 = 0 ms
+    - Ready Queue: 
