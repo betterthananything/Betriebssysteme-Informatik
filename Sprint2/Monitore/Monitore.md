@@ -54,3 +54,6 @@ Zudem gibt es einen Unterschied, was passiert, wenn ein Thread einen anderen "au
 In [monitor.java](monitor.java) und [monitor.py](monitor.py) sind Code-Snippets, in denen jeweils eine Klasse als Monitor implementiert ist.
 
 In [monitor-multiclass.java](monitor-multiclass.java) und [monitor-multiclass.py](monitor-multiclass.py) sind Code-Snippets, in denen jeweils drei Klassen implementiert sind, je ein Monitor, ein Verbraucher und ein Entnehmer.
+
+In Python wird ein **Lock- bzw. Condition-Objekt** verwendet, um den Monitor zu realisieren. 
+In Java kann jedes Klasse nativ als Monitor fungieren. Das Schlüsselwort ```synchronized``` fügt eine Methode zum **kritischen Abschnitt** der Klasse hinzu, um **wechselseitigen Ausschluss** zu ermöglichen.
