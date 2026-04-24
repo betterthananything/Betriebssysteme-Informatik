@@ -39,7 +39,7 @@ In der Round Robin Scheduling Strategie rotiert das System (OS) durch jeden anst
     - Ready Queue: P2, P1
 
 3. Time 4-6 (P2 führt aus):
-    - P2 fängt Ausführung an als es bei 4 ms ankommt
+    - P2 fängt Ausführung an, als es bei 4 ms ankommt
     - Läuft für 2 ms; restliche BT = 2 - 2 = 0 ms
     - P2 ist fertig
     - P3 kommt bei 5 ms an
@@ -51,7 +51,7 @@ In der Round Robin Scheduling Strategie rotiert das System (OS) durch jeden anst
     - Ready Queue: P3
 
 5. Time 7-9 (P3 führt aus):
-    - P3 fängt ausführung an
+    - P3 fängt Ausführung an
     - Restliche BT = 4 - 2 = 2 ms
     - Ready Queue: P3
   
@@ -63,25 +63,25 @@ In der Round Robin Scheduling Strategie rotiert das System (OS) durch jeden anst
 #### Vorteile: 
 - Jeder Prozess kriegt die gleiche Menge an CPU
 - Der Algorithmus ist einfach zu implementieren und verstehen
-- Kann mehrere Prozesse gleichzeitig bewältigen ohne große Verzögerungen
+- Kann mehrere Prozesse gleichzeitig ohne große Verzögerungen bewältigen 
 
 #### Nachteile:
-- Großer Overhead wenn der Quantum (Quantum Time) zu klein ist
-- Fühlt sich langsam an wenn der Quantum zu groß ist
+- Großer Overhead, wenn der Quantum (Quantum Time) zu klein ist
+- Fühlt sich langsam an, wenn der Quantum zu groß ist
   
 ---------------
 
 ### **Shortest-Job-First (SJF)**
-Wie der Name schon sagt wird der kürzester Prozess, also der Prozess mit der wenigsten BT, ausgeführt.  
+Wie der Name schon sagt, wird der kürzester Prozess, also der Prozess mit der wenigsten BT, ausgeführt.  
 
-Dabei ist das erste Problem schon, dass das System nicht die BT's der einzelnen Prozesse weiß, weswegen es nur in spezifischen Situationen verwendet werden kann wo die BT bekannt ist.  
+Dabei ist das erste Problem schon, dass das System nicht die BT's der einzelnen Prozesse weiß, weswegen es nur in spezifischen Situationen verwendet werden kann, wo die BT bekannt ist.  
 
-Um zu vermeiden, dass immer mehr kürzere Prozess kommen und die längeren ignoriert werden, muss man ageing implementieren. 
+Um zu vermeiden, dass immer mehr kürzere Prozess kommen und die längeren ignoriert werden, muss man aging implementieren. 
 
 #### Vorteile:
 - Besser als FCFS, weil es die durchschnittliche Wartezeit verkürzt
-- Gut in Situationen wo die BT's bekannt sind
+- Gut in Situationen, wo die BT's bekannt sind
 
 #### Nachteile:
-- Kann zu starving führen (siehe ageing)
+- Kann zu starvation führen (siehe ageing)
 - BT zu berechnen ist schwer
