@@ -5,7 +5,7 @@ class Konto {
 
     public synchronized void einzahlen(int betrag) {
         kontostand += betrag;
-        System.out.println("Eingezahlt: " + b + " | Stand: " + kontostand);
+        System.out.println("Eingezahlt: " + betrag + " | Stand: " + kontostand);
         notifyAll();
     }
 
