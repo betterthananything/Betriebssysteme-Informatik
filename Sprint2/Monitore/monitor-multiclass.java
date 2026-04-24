@@ -34,7 +34,10 @@ class Arbeitgeber implements Runnable {
             k.einzahlen(50); // zahlt alle 2s, 50 € ein
             try {
                 Thread.sleep(2000); // pausiert 2s
-            } catch (Exception e) {}
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                break;
+            }
         }
     }
 }
