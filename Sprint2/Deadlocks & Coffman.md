@@ -10,4 +10,7 @@ Eine Ressource kann nur von einem Prozess gleichzeitig verwendet werden, d.h. no
 Ein Prozess "hält" mindestens eine Ressource und wartet um andere Ressourcen zu bekommen. In dieser Zeit gibt er nicht seine Ressourcen frei.
 
 **Keine Verdrängung (No Preemption):**  
-Ressourcen können nicht von einem Prozess nicht entzogen werden ohne Erlaubnis des Prozesses. Das Betriebssytem und andere Prozesse dürfen sie nicht wegnehmen um es einem anderen Prozess zuzuordnen.
+Ressourcen können nicht von einem Prozess nicht entzogen werden ohne Erlaubnis des Prozesses. Das Betriebssytem und andere Prozesse dürfen sie nicht wegnehmen um es einem anderen Prozess zuzuordnen.  
+
+**Zyklisches Warten (circular wait):**  
+Es entsteht eine Kette an Prozessen, die alle auf die Ressource von dem nächsten Prozess warten, der letzte dann auf die Ressource vom ersten, wodurch ein Zyklus entsteht.
